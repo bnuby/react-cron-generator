@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-cron-generator/static/css/main.b001345b.css",
+    "main.js": "/react-cron-generator/static/js/main.79339418.js",
+    "static/js/787.3a371aab.chunk.js": "/react-cron-generator/static/js/787.3a371aab.chunk.js",
+    "index.html": "/react-cron-generator/index.html",
+    "main.b001345b.css.map": "/react-cron-generator/static/css/main.b001345b.css.map",
+    "main.79339418.js.map": "/react-cron-generator/static/js/main.79339418.js.map",
+    "787.3a371aab.chunk.js.map": "/react-cron-generator/static/js/787.3a371aab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b001345b.css",
+    "static/js/main.79339418.js"
+  ]
+}
