@@ -12,6 +12,14 @@ export default {
   output: [
     {
       file: packageJson.main,
+      format: 'cjs',
+      exports: 'named',
+      sourcemap: true
+    },
+    {
+      file: packageJson.module,
+      format: 'esm',
+      exports: 'named',
       sourcemap: true
     }
   ],
@@ -19,10 +27,15 @@ export default {
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
+    typescript({ 
+      rollupCommonJSResolveHack: false,
+      clean: true,
+      useTsconfigDeclarationDir: true,
+      tsconfig: "./tsconfig.json"
+    }),
     postcss(),
     json()
   ],
   external: ["react", "react-dom"],
-  exclude:["node_modules"]
+  exclude:["node_modules"],
 };

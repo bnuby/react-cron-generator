@@ -1,6 +1,6 @@
 {
-  "name": "react-cron-generator",
-  "version": "2.0.8",
+  "name": "@bnuby/react-cron-generator",
+  "version": "0.0.3",
   "description": "Simple react component to generate cron expression",
   "keywords": [
     "React cron generator",
@@ -19,14 +19,14 @@
     "cronstrue": "^2.12.0"
   },
   "main": "build/index.js",
-  "module": "build/index.js",
+  "module": "build/index.esm.js",
   "files": [
     "build",
     "README.md"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sojinantony01/react-cron-generator.git"
+    "url": "https://github.com/bnuby/react-cron-generator.git"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -61,6 +61,9 @@
     "deploy": "gh-pages -d build",
     "react-build": "CI=false && react-scripts build",
     "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/bnuby"
   },
   "homepage": "https://sojinantony01.github.io/react-cron-generator",
   "eslintConfig": {
