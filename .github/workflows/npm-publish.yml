@@ -25,9 +25,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+          scope: "@bnuby"
       - run: npm install
       - run: npm run build
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
@@ -43,10 +44,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-          scope: "@sojinantony01"
+          scope: "@bnuby"
       - run: node gpr-hack.js
       - run: npm install
       - run: npm run build
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.ACTIONS_DEPLOY_ACCESS_TOKEN}}

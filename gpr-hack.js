@@ -7,6 +7,6 @@ const file = readFileSync("./package.json", {
 
 const json = JSON.parse(file);
 
-json.name = "@sojinantony01/react-cron-generator";
+json.name = "@bnuby/react-cron-generator";
 
 writeFileSync("./package.json", JSON.stringify(json, undefined, 2));
